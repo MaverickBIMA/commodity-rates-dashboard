@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sovereign Gems | Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="portal-wrapper">
+        <!-- PREMIUM CENTERED HEADER -->
+        <header class="centered-header">
+            <div class="header-left">
+                <span class="system-status">
+                    <span class="status-pulse"></span> Live Market Connected
+                </span>
+            </div>
+
+            <div class="header-center">
+                <div class="logo-outer-ring">
+                    <div class="logo-frame">
+                        <img src="assets/images/gold company logo.png" alt="Sovereign Gems Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="logo-placeholder" style="display: none;">SG</div>
+                    </div>
+                </div>
+                <h1 class="brand-title">SOVEREIGN GEMS</h1>
+            </div>
+
+            <div class="header-right">
+                <div class="profile-pill">
+                    <div class="avatar">A</div>
+                    <div class="profile-text">
+                        <strong>Admin Portal</strong>
+                        <span>Control Panel</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- CATEGORIES FILTER SECTION -->
+        <section class="filter-section">
+            <button class="filter-btn active" data-category="all">⚡ All Resources</button>
+            <button class="filter-btn" data-category="precious">💎 Precious Metals & Gems</button>
+            <button class="filter-btn" data-category="base">⚙️ Base Metals</button>
+            <button class="filter-btn" data-category="energy">🔋 Energy & Minerals</button>
+            <button class="filter-btn" data-category="earth">🧱 Earth & Construction</button>
+        </section>
+
+        <!-- MAIN COMMODITIES GRID -->
+        <main class="commodities-grid">
+            
+            <!-- Category: Precious -->
+            <div class="commodity-card" data-category="precious" id="gold">
+                <div class="card-meta">
+                    <h3>Gold</h3>
+                    <span>XAU/USD</span>
+                </div>
+                <div class="card-pricing">
+                    <strong class="price">$2,345.50</strong>
+                    <span class="change up">+0.12%</span>
+                </div>
+            </div>
+
+            <div class="commodity-card" data-category="precious" id="diamond">
+                <div class="card-meta">
+                    <h3>Diamond</h3>
+                    <span>1 Carat / VVS1</span>
+                </div>
+                <div class="card-pricing">
+                    <strong class="price">$4,500.00</strong>
+                    <span class="change neutral">0.00%</span>
+                </div>
+            </div>
+
+            <div class="commodity-card" data-category="precious" id="chromium">
+                <div class="card-meta">
+                    <h3>Chromium</h3>
+                    <span>Per Ton / USD</span>
+                </div>
+                <div class="card-pricing">
+                    <strong class="price">$6,800.00</strong>
+                    <span class="change down">-0.24%</span>
+                </div>
+            </div>
+
+            <div class="commodity-card" data-category="precious" id="tantalite">
+                <div class="card-meta">
+                    <h3>Tantalite</h3>
+                    <span>Per Kg</span>
+                </div>
+                <div class="card-pricing">
+                    <strong class="price">$150.00</strong>
+                    <span class="change up">+0.45%</span>
+                </div>
+            </div>
+
+            <div class="commodity-card" data-category="precious" id="tantalum">
+                <div class="card-meta">
+                    <h3>Tantalum</h3>
+                    <span>Pure / Kg</span>
+                </div>
+                <div class="card-pricing">
+                    <strong class="price">$280.00</strong>
+                    <span class="change down">-0.10%</span>
+                </div>
+            </div>
+
+            <div class="commodity-card" data-category="precious" id="beryllium">
+                <div class="card-meta">
+                    <h3>Beryllium</h3>
+                    <span>99% Pure</span>
+                </div>
+                <div class="card-pricing">
+                    <strong class="price">$850.00</strong>
+                    <span class="change up">+0.05%</span>
+                </div>
+            </div>
+
+            <div class="commodity-card" data-category="precious" id="bismuth">
+                <div class="card-meta">
+                    <h3>Bismuth</h3>
+                    <span>Industrial / Kg</span>
+                </div>
+                <div class="card-pricing">
+                    <strong class="price">$12.40</strong>
+                    <span class="change up">+1.20%</span>
+                </div>
+            </div>
+
+            <!-- Category: Base Metals -->
+            <div class="commodity-card" data-category="base" id="copper">
+                <div class="card-meta">
+                    <h3>Copper</h3>
+                    <span>LME Spot / Ton</span>
+                </div>
+                <div class="card-pricing">
+                    <strong class="price">$9,850.00</strong>
+                    <span class="change up">+0.32%</span>
+                </div>
+            </div>
+
+            <div class="commodity-card" data-category="base" id="cobalt">
+                <div class="card-meta">
+                    <h3>Cobalt</h3>
+                    <span>Per Ton</span>
+                </div>
+                <div class="card-pricing">
+                    <strong class="price">$28,500.00</strong>
+                    <span class="change down">-0.15%</span>
+                </div>
+            </div>
+
+            <div class="commodity-card" data-category="base" id="tin">
+                <div class="card-meta">
+                    <h3>Tin</h3>
+                    <span>LME / Ton</span>
+                </div>
+                <div class="card-pricing">
+                    <strong class="price">$32,100.00</strong>
+                    <span class="change up">+0.75%</span>
+                </div>
+            </div>
+
+            <div class="commodity-card" data-category="base" id="iron-ore">
+                <div class="card-meta">
+                    <h3>Iron Ore</h3>
+                    <span>62% Fe / Ton</span>
+                </div>
+                <div class="card-pricing">
+                    <strong class="price">$108.50</strong>
+                    <span class="change down">-0.80%</span>
+                </div>
+            </div>
+
+            <div class="commodity-card" data-category="base" id="lead">
+                <div class="card-meta">
+                    <h3>Lead</h3>
+                    <span>Refined / Ton</span>
+                </div>
+                <div class="card-pricing">
+                    <strong class="price">$2,150.00</strong>
+                    <span class="change neutral">0.00%</span>
+                </div>
+            </div>
+
+            <div class="commodity-card" data-category="base" id="lithium">
+                <div class="card-meta">
+                    <h3>Lithium</h3>
+                    <span>Carbonate / Ton</span>
+                </div>
+                <div class="card-pricing">
+                    <strong class="price">$14,200.00</strong>
+                    <span class="change down">-1.40%</span>
+                </div>
+            </div>
+
+            <div class="commodity-card" data-category="base" id="nickel">
+                <div class="card-meta">
+                    <h3>Nickel</h3>
+                    <span>LME / Ton</span>
+                </div>
+                <div class="card-pricing">
+                    <strong class="price">$16,450.00</strong>
+                    <span class="change up">+0.22%</span>
+                </div>
+            </div>
+
+            <div class="commodity-card" data-category="base" id="chromite">
+                <div class="card-meta">
+                    <h3>Chromite</h3>
+                    <span>Ore / Ton</span>
+                </div>
+                <div class="card-pricing">
+                    <strong class="price">$320.00</strong>
+                    <span class="change up">+0.15%</span>
+                </div>
+            </div>
+
+            <div class="commodity-card" data-category="base" id="magnetite">
+                <div class="card-meta">
+                    <h3>Magnetite</h3>
+                    <span>Concentrate</span>
+                </div>
+                <div class="card-pricing">
+                    <strong class="price">$115.00</strong>
+                    <span class="change down">-0.40%</span>
+                </div>
+            </div>
+
+            <div class="commodity-card" data-category="base" id="wolfram">
+                <div class="card-meta">
+                    <h3>Wolfram</h3>
+                    <span>Tungsten Ore</span>
+                </div>
+                <div class="card-pricing">
+                    <strong class="price">$330.00</strong>
+                    <span class="change up">+0.60%</span>
+                </div>
+            </div>
+
+            <!-- Category: Energy & Chemicals -->
+            <div class="commodity-card" data-category="energy" id="petroleum">
+                <div class="card-meta">
+                    <h3>Petroleum</h3>
+                    <span>Brent Crude / Bbl</span>
+                </div>
+                <div class="card-pricing">
+                    <strong class="price">$82.40</strong>
+                    <span class="change up">+0.45%</span>
+                </div>
+            </div>
+
+            <div class="commodity-card" data-category="energy" id="uranium">
+                <div class="card-meta">
+                    <h3>Uranium</h3>
+                    <span>U3O8 / Lb</span>
+                </div>
+                <div class="card-pricing">
+                    <strong class="price">$84.50</strong>
+                    <span class="change up">+1.15%</span>
+                </div>
+            </div>
+
+            <div class="commodity-card" data-category="energy" id="phosphates">
+                <div class="card-meta">
+                    <h3>Phosphates</h3>
+                    <span>Rock / Ton</span>
+                </div>
+                <div class="card-pricing">
+                    <strong class="price">$152.00</strong>
+                    <span class="change neutral">0.00%</span>
+                </div>
+            </div>
+
+            <div class="commodity-card" data-category="energy" id="vermiculite">
+                <div class="card-meta">
+                    <h3>Vermiculite</h3>
+                    <span>Raw Ore</span>
+                </div>
+                <div class="card-pricing">
+                    <strong class="price">$410.00</strong>
+                    <span class="change up">+0.10%</span>
+                </div>
+            </div>
+
+            <div class="commodity-card" data-category="energy" id="kaolin">
+                <div class="card-meta">
+                    <h3>Kaolin</h3>
+                    <span>Refined Clay</span>
+                </div>
+                <div class="card-pricing">
+                    <strong class="price">$165.00</strong>
+                    <span class="change down">-0.30%</span>
+                </div>
+            </div>
+
+            <div class="commodity-card" data-category="energy" id="limestone">
+                <div class="card-meta">
+                    <h3>Limestone</h3>
+                    <span>Crushed / Ton</span>
+                </div>
+                <div class="card-pricing">
+                    <strong class="price">$35.00</strong>
+                    <span class="change up">+0.05%</span>
+                </div>
+            </div>
+
+            <div class="commodity-card" data-category="energy" id="gypsum">
+                <div class="card-meta">
+                    <h3>Gypsum</h3>
+                    <span>Plaster Grade</span>
+                </div>
+                <div class="card-pricing">
+                    <strong class="price">$48.00</strong>
+                    <span class="change neutral">0.00%</span>
+                </div>
+            </div>
+
+            <!-- Category: Earth & Construction -->
+            <div class="commodity-card" data-category="earth" id="silica-sand">
+                <div class="card-meta">
+                    <h3>Silica Sand</h3>
+                    <span>Glass Grade / Ton</span>
+                </div>
+                <div class="card-pricing">
+                    <strong class="price">$65.00</strong>
+                    <span class="change up">+0.25%</span>
+                </div>
+            </div>
+
+            <div class="commodity-card" data-category="earth" id="feldspar">
+                <div class="card-meta">
+                    <h3>Feldspar</h3>
+                    <span>Ceramic / Ton</span>
+                </div>
+                <div class="card-pricing">
+                    <strong class="price">$95.00</strong>
+                    <span class="change down">-0.10%</span>
+                </div>
+            </div>
+
+            <div class="commodity-card" data-category="earth" id="clays">
+                <div class="card-meta">
+                    <h3>Clays</h3>
+                    <span>Bentonite / Ton</span>
+                </div>
+                <div class="card-pricing">
+                    <strong class="price">$120.00</strong>
+                    <span class="change neutral">0.00%</span>
+                </div>
+            </div>
+
+            <div class="commodity-card" data-category="earth" id="marble">
+                <div class="card-meta">
+                    <h3>Marble</h3>
+                    <span>Premium Block</span>
+                </div>
+                <div class="card-pricing">
+                    <strong class="price">$450.00</strong>
+                    <span class="change up">+0.80%</span>
+                </div>
+            </div>
+
+            <div class="commodity-card" data-category="earth" id="salts">
+                <div class="card-meta">
+                    <h3>Salts</h3>
+                    <span>Industrial Halite</span>
+                </div>
+                <div class="card-pricing">
+                    <strong class="price">$28.00</strong>
+                    <span class="change down">-0.50%</span>
+                </div>
+            </div>
+
+            <div class="commodity-card" data-category="earth" id="sand">
+                <div class="card-meta">
+                    <h3>Construction Sand</h3>
+                    <span>Bulk Cubic Yard</span>
+                </div>
+                <div class="card-pricing">
+                    <strong class="price">$18.50</strong>
+                    <span class="change up">+0.15%</span>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Injecting JS for Tab switching filters -->
+    <script src="script.js"></script>
+</body>
+
+<footer class="portal-footer">
+    <div class="footer-container">
+        <div class="footer-brand">
+            <h3>SOVEREIGN GEMS</h3>
+            <p>Real-time commodity and industrial metal pricing index. Built for accuracy, tracking, and global market synchronization.</p>
+        </div>
+
+        <div class="footer-links">
+            <h4>Quick Navigation</h4>
+            <ul>
+                <li><a href="#all">All Resources</a></li>
+                <li><a href="#precious">Precious Metals</a></li>
+                <li><a href="#base">Industrial Base</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-socials">
+            <h4>Connect With Us</h4>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank" class="social-btn facebook" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" class="social-btn instagram" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="social-btn linkedin" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com" target="_blank" class="social-btn github" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 Sovereign Gems. All Rights Reserved. Powered by Live Market APIs.</p>
+    </div>
+</footer>
+</html>
